@@ -1,6 +1,6 @@
 ---
 layout: center
-clicks: 9
+clicks: 10
 ---
 
 <div
@@ -47,7 +47,7 @@ This number grows to [12 indicators]{class="bg-gradient-to-r from-purple-600 via
 </div>
 </div>
 
-<div v-click="[9, 10]" class="absolute inset-0 flex justify-center items-center delay-500">
+<div v-click="10" class="absolute inset-0 flex justify-center items-center">
 <div class="border-2 border-sky w-48 h-20 mr-64 mt-28 rounded-lg border-dashed">
 </div>
 </div>

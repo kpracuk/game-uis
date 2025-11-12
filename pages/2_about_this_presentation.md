@@ -29,7 +29,7 @@ those are two entirely different mediums after all
   </template>
   <template #2>
     <div class="absolute left-0 top-0 px-12 py-7">
-        <img src="../assets/2/battlefield.png" class="rounded-lg" />
+        <img src="../assets/2/menu.png" class="rounded-lg" />
     </div>
   </template>
   <template #3>

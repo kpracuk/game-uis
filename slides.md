@@ -25,3 +25,11 @@ src: ./pages/4_accolade.md
 ---
 src: ./pages/5_accolade_first.md
 ---
+
+---
+src: ./pages/6_wrapup.md
+---
+
+---
+src: ./pages/7_thanks.md
+---

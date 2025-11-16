@@ -17,16 +17,18 @@ Krystian Pracuk | Disorder
 </div>
 
 <!--
-Hi! I'm Krystian it's nice to be here!
+I'm Krystian from the Disorder team, and today I wanted to talk about video game UIs.
 
-I'm a frontend dev at Disorder and to be honest this is my first time giving a presentation like this.  
-So forgive me if I fumble something up and my voice is a bit shaky at times.
+You may ask why because Allegro doesn't make games (But looking at future plans, maybe I can say doesn't "YET" make games)?
 
-So, a topic that I hope sparked curiosity at least in some of you.
+Because I think when it comes to simplicity and information density, video games have perfected UIs.
 
-We'll talk about how video games are able to send a multitude of information to players through their UIs  
-while at the same time being so minimal and unobtrusive to the gameplay itself.
-
-How it relates to web interfaces... If at all.  
-And how we can use it as some sort of inspiration for web interfaces.
+```
+click=1
+```
+We will also talk about how we can compare them to web interfaces
+```
+click=2
+```
+and how can we be inspired by them.
 -->

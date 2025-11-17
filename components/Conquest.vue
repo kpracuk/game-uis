@@ -8,9 +8,9 @@
         v-motion
         :initial="{ scale: 1, y: 0, x: 0, }"
         :click-3="{ scale: 3.6, y: 468, x: 0, transition: { type: 'tween'}}"
-        :click-6="{ scale: 1, y: 0, x: 0, transition: { type: 'tween'} }"
-        :click-7="{ scale: 3, y: -200, x: -600, transition: { type: 'tween'} }"
-        :click-9="{ scale: 1, y: 0, x: 0, transition: { type: 'tween'} }"
+        :click-7="{ scale: 1, y: 0, x: 0, transition: { type: 'tween'} }"
+        :click-8="{ scale: 3, y: -190, x: -600, transition: { type: 'tween'} }"
+        :click-10="{ scale: 1, y: 0, x: 0, transition: { type: 'tween'} }"
         :style="{ borderRadius: '0.5rem' }"
         loop
     >
@@ -81,6 +81,10 @@ const steps = ref([
     video.pause()
     video.currentTime = 17.75
     clearTimeouts()
+  },
+  (video: HTMLVideoElement) => {
+    video.pause()
+    video.currentTime = 17.75
   },
   (video: HTMLVideoElement) => {
     video.pause()

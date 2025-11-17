@@ -1,6 +1,6 @@
 ---
 layout: center
-clicks: 10
+clicks: 11
 transition: fade-out
 ---
 
@@ -8,7 +8,8 @@ transition: fade-out
   v-motion
   :initial="{ y: 0, x: 0, }"
   :click-3="{ y: -64, x: 0, transition: { type: 'tween'}}"
-  :click-6="{ y: 0, x: 0, transition: { type: 'tween'}}"
+  :click-6="{ y: -32, x: 0, transition: { type: 'tween'}}"
+  :click-7="{ y: 0, x: 0, transition: { type: 'tween'}}"
 >
   <Conquest :clicks="$clicks" />
 </div>
@@ -46,9 +47,20 @@ This number grows to [12 indicators]{class="bg-gradient-to-r from-red-600 to-sky
 
   </div>
 </div>
+
+<div
+  class="absolute w-full"
+  v-click="[6, 7]"
+  v-motion
+  :initial="{ opacity: 0, y: 0, x: 0, }"
+  :click-6="{ opacity: 1, y: -16, x: 0, transition: { type: 'tween'}}"
+>
+  <img src="/assets/3/header.png" class="rounded-lg">
 </div>
 
-<div v-click="10" class="absolute inset-0 flex justify-center items-center">
+</div>
+
+<div v-click="11" class="absolute inset-0 flex justify-center items-center">
 <div class="border-2 border-sky w-48 h-20 mr-64 mt-28 rounded-lg border-dashed">
 </div>
 </div>
@@ -104,7 +116,11 @@ The main problem of this interface is that unless you are familiar with the game
 
 But the saving factor is that it's not the responsibility of this element. The game uses other forms of educating the player about the mechanics. During loading screen or through dedicated tutorials
 
-Web counterpart would be something like a header on Allegro's page.
+```
+click=6
+```
+
+Closest web counterpart I could think of would be something like a header on Allegro's page.
 
 This element is simple yet communicates a lot of information about the state of the website (like cart status, authentication status, notifications etc.)
 
@@ -113,12 +129,12 @@ It is also relatively static and follows you everywhere on the platform.
 It also heavily relies on users being familiar with common web conventions to understand what is going on.
 
 ```
-click=6
+click=7
 ```
 Moving on to an element that is pretty much the opposite.
 
 ```
-click=7
+click=8
 ```
 This... I don't know what to call it.
 
@@ -127,7 +143,7 @@ Abilities progression UI?
 Simply it shows you your current ability level and occasional notification about a level up.
 
 ```
-click=8
+click=9
 ```
 This element shows very little information when compared to the previous one.
 
@@ -138,11 +154,11 @@ While it does not directly say something like "You've unlocked new ability" just
 Pretty clever if you ask me.
 
 ```
-click=9
+click=10
 ```
 For the next element I won't zoom in since it is important to see it in context of the whole screen.
 ```
-click=10
+click=11
 ```
 I'm talking about this element - the score popup.
 

@@ -1,6 +1,7 @@
 ---
 layout: center
 clicks: 10
+transition: fade-out
 ---
 
 <div
@@ -41,7 +42,7 @@ This UI element has [7 unique indicators]{class="text-yellow font-bold"} communi
   </div>
 <div v-click="5">
 
-This number grows to [12 indicators]{class="bg-gradient-to-r from-purple-600 via-amber-500 to-sky-600 bg-clip-text text-transparent font-bold"} if we count duplicated information
+This number grows to [12 indicators]{class="bg-gradient-to-r from-red-600 to-sky-600 bg-clip-text text-transparent font-bold"} if we count duplicated information
 
   </div>
 </div>
@@ -55,10 +56,10 @@ This number grows to [12 indicators]{class="bg-gradient-to-r from-purple-600 via
 <Arrows />
 
 <!--
-I want to show you example of 3 UI elements present in recently released Battlefield 6.
+I will use examples from recently released Battlefield 6.
 
-Why? First person shooter are a perfect example of simple UIs because those aren't the main focus.
-Also that's all I've been playing since it came out a month ago so yeah.
+Why? Because that's all I've been playing since it came out a month ago
+But mainly because first person shooter are a perfect example of simple and easy to understand UIs because the interface is not the main focus.
 
 In FPS games it's more important what happens behind the UI, so the interface needs to unobtrusive for the player yet still do its job of communicating game state.
 ```
@@ -66,22 +67,24 @@ click=1
 ```
 Here we have a clip of a conquest game mode match.
 
-Where we need to capture and hold flags to make other team lose tickets.
+For those who haven't played Battlefield games before.
 
-Each teams start with 1000 tickets each. First team that reaches 0 tickets loses.
+We need to capture and hold flags to make the other team lose tickets.
 
-The gameplay is rather chaotic so the UI needs to be simple and easy to read at a glance.
+Each teams start with 1000 tickets. First team that reaches 0 tickets loses.
+
+Gameplay can get pretty chaotic so the UI needs to be simple and easy to read at a glance.
 ```
 click=2
 ```
-Let's go to the first UI element I will be talking:
+Let's go to the first UI element I will be talking about:
 
 ```
 click=3
 ```
 The objectives interface.
 
-This element is present throughout the entire match and shows the ticket count for both teams as well as the status of each flag.
+This element is present throughout the entire match and mainly shows the ticket count for both teams and the status of each flag.
 
 If you take a glance at it it's rather simple and minimalistic. BUT
 ```
@@ -91,7 +94,7 @@ If you look a bit closer you can see that it actually communicates quite a lot o
 
 To be exact I counted 7 unique indicators here:
 
-But since this element has a lot of small variants the overall number in the game would probably be even higher.
+Those are just the ones present in this specific moment. Overall throughout the match there are more indicators that can appear here. But those are rather very contextual.
 ```
 click=5
 ```
@@ -99,18 +102,20 @@ If we count duplicates the number grows to 12 indicators.
 
 The main problem of this interface is that unless you are familiar with the game and understand the mechanics this interface tells you almost nothing.
 
-But that is not it's responsibility. The game uses other forms of educating the player about the mechanics. During loading screen or through dedicated tutorials
+But the saving factor is that it's not the responsibility of this element. The game uses other forms of educating the player about the mechanics. During loading screen or through dedicated tutorials
 
 Web counterpart would be something like a header on Allegro's page.
 
-This element is simple, relatively static since it follows you everywhere yet communicates a lot of information about the state of the website (like cart status, authentication status, notifications etc.)
+This element is simple yet communicates a lot of information about the state of the website (like cart status, authentication status, notifications etc.)
+
+It is also relatively static and follows you everywhere on the platform. 
 
 It also heavily relies on users being familiar with common web conventions to understand what is going on.
 
 ```
 click=6
 ```
-Moving to something entirely different.
+Moving on to an element that is pretty much the opposite.
 
 ```
 click=7
@@ -119,14 +124,16 @@ This... I don't know what to call it.
 
 Abilities progression UI?
 
+Simply it shows you your current ability level and occasional notification about a level up.
+
 ```
 click=8
 ```
 This element shows very little information when compared to the previous one.
 
-Simply your current ability level and occasional notifications about new levels unlocked.
+But it also directly educates player what his new ability does.
 
-But it also directly educates player what his new ability does. That popup also acts as an indicator that you leveled up.
+While it does not directly say something like "You've unlocked new ability" just the presence of the edu tip is enough to suggest that.
 
 Pretty clever if you ask me.
 
@@ -139,14 +146,16 @@ click=10
 ```
 I'm talking about this element - the score popup.
 
-This element is a weird one because it shows information that isn't really important during the gameplay.
+This element is a weird one because I was just glazing how so minimalistic and simple game UIs are. And this one seems to suggest otherwise
 
 We don't really need to know precise number of points we've just earned.
-Same as we don't need to know the type of action we are currently performing. (I'm talking about those rectangles with "Defending", "Defensive" etc.)
+Same as we don't need to know the type of action we are currently performing. We already know that
 
-But that is also by design. This element is meant as some sort of hype generating device.
+(I'm talking about those rectangles with "Defending", "Defensive" etc.)
 
-When you perform a good action you get rewarded with points and that popup.
+But believe it or not that is also by design. This element is meant as some sort of hype generating device.
 
-The better you do the more chaotic this element gets.
+The better you do the more chaotic this element gets and more points are displayed.
+
+As a bonus one - we will talk about one of it's the sub-elements
 -->

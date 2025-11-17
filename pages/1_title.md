@@ -17,18 +17,20 @@ Krystian Pracuk | Disorder
 </div>
 
 <!--
-I'm Krystian from the Disorder team, and today I wanted to talk about video game UIs.
+I'm Krystian, Frontend Software Engineer from the Disorder team, and today I wanted to talk about video game UIs.
 
-You may ask why because Allegro doesn't make games (But looking at future plans, maybe I can say doesn't "YET" make games)?
-
-Because I think when it comes to simplicity and information density, video games have perfected UIs.
+Which may sound strange because Allegro doesn't make video games (But looking at future plans, maybe I can say doesn't "YET" make games)?
 
 ```
 click=1
 ```
-We will also talk about how we can compare them to web interfaces
+
+I simply think that video game UIs have certain traits that are not that common in web interfaces.
+
+We will review a few examples and see
+
 ```
 click=2
 ```
-and how can we be inspired by them.
+what are the differences and how can we use them as an inspiration.
 -->

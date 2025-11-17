@@ -1,3 +1,7 @@
+---
+transition: fade-out
+---
+
 # This presentation...
 
 <v-click>
@@ -40,7 +44,7 @@ those are two entirely different mediums after all
 </v-switch>
 
 <!--
-So before we begin, a few "disclaimers" I would say.
+So before we begin, a few quote on quote "disclaimers".
 
 ```
 click=1
@@ -63,12 +67,12 @@ click=2,3
 ```
 
 If not for the background image you would not be able to tell which one is which
-That's why we will focus on in-game UIs. I mean this:
+That's why we will focus on in-game UIs or HUDs if you want to call them that:
 
 ```
 click=4
 ```
-Sometimes there is too much overlap between something to make the comparison interesting you know?
+Sometimes there is too much overlap between something to make the comparison interesting and that was the case this time.
 
 ```
 click=5
@@ -78,14 +82,16 @@ click=6
 ```
 Also this presentation isn't about gamification. We will briefly mention it because it would be rather hard not to.
 
-But gamification doesn't connect to the UI specifically. It's much broader term. Connected more to psychology and motivation rather than the interface itself.
+But gamification doesn't connect to the UI specifically. It's much broader term. Connected more to psychology and motivation rather than the specific interface itself.
 
 ```
 click=7
 ```
 And as some sort of counter to the menu UI's and Web UI's being almost too similar...
 
-Those comparisons aren't direct apples to apples comparisons.
+Comparisons in this presentations aren't direct apples to apples comparisons.
+
+While some may have a direct counterpart on the web, most don't.
 
 We will look at them as an inspiration source rather than direct copy-paste examples. Or ready to use UI blueprints.
 -->

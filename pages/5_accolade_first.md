@@ -16,12 +16,13 @@ layout: center
 >
   <div>
 
-A player acquiring [Accolade]{class="text-yellow font-bold"} for the first time is met with a special animation
+Acquiring [Accolade]{class="text-yellow font-bold"} for the first time triggers a special animation
 
   </div>
 </div>
 
 <!--
-Accolades are a sub-elements and their task is exactly that - hype the player up.
-Sometimes it even displays multiple accolades for one action as shown here.
+To further emphasize the reward, getting an accolade for the first time triggers a special animation.
+
+I really wish web UIs had more of those really subtle animations to make them feel more polished.
 -->

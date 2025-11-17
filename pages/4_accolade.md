@@ -1,5 +1,6 @@
 ---
 layout: center
+transition: fade-out
 ---
 
 <SlidevVideo class="w-full rounded-lg" muted autoreset="click" loop autoplay v-motion :initial="{ y: -32 }">
@@ -24,10 +25,10 @@ They are worth small amount of XP points at the end of the match
 </div>
 
 <!--
-Accolades are a sub-elements and their task is exactly that - hype the player up.
+Accolades are a sub-elements of the points popup and their task is almost exclusively motivating the player up even more.
 Sometimes it even displays multiple accolades for one action as shown here.
 
-For example "Flight dispatcher" accolade show here
+For example "Flight dispatcher" accolade shown here
 
-is given to a player who eliminates enemy player inside an aircraft without destroying the aircraft itself.
+is given to a player who eliminates enemy pilot without destroying the aircraft itself.
 -->

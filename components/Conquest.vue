@@ -75,7 +75,7 @@ const steps = ref([
       fadeInTimeoutId.value = window.setTimeout(() => {
         video.pause()
       }, 1800)
-    }, 400)
+    }, 500)
   },
   (video: HTMLVideoElement) => {
     video.pause()
@@ -105,7 +105,7 @@ const steps = ref([
       fadeInTimeoutId.value = window.setTimeout(() => {
         video.pause()
       }, 5300)
-    }, 400)
+    }, 500)
   },
   (video: HTMLVideoElement) => {
     clearTimeouts()

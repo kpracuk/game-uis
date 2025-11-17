@@ -1,7 +1,7 @@
 ---
 layout: center
 clicks: 11
-transition: fade-out
+transition: fade
 ---
 
 <div

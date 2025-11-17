@@ -2,7 +2,7 @@
 layout: center
 ---
 
-<SlidevVideo class="w-full rounded-lg" muted autoreset="click" loop autoplay v-motion :initial="{ y: -32 }">
+<SlidevVideo class="w-full rounded-lg" muted loop autoplay v-motion :initial="{ y: -32 }">
   <source src="/assets/5/accolade_first.mp4" type="video/mp4" />
 </SlidevVideo>
 <div class="absolute inset-0 flex justify-center items-center">

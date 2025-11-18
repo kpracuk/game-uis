@@ -10,6 +10,9 @@ transition: fade
   :click-3="{ y: -64, x: 0, transition: { type: 'tween'}}"
   :click-6="{ y: -32, x: 0, transition: { type: 'tween'}}"
   :click-7="{ y: 0, x: 0, transition: { type: 'tween'}}"
+  :click-8="{ y: -64, x: 0, transition: { type: 'tween'}}"
+  :click-10="{ y: 0, x: 0, transition: { type: 'tween'}}"
+  :click-11="{ y: -32, x: 0, transition: { type: 'tween'}}"
 >
   <Conquest :clicks="$clicks" />
 </div>
@@ -49,6 +52,38 @@ This number grows to [12 indicators]{class="bg-gradient-to-r from-red-600 to-sky
 </div>
 
 <div
+  v-click="[8, 10]"
+  class="absolute w-full text-center"
+  v-motion
+  :initial="{ opacity: 0, y: 0, x: 0, }"
+  :click-8="{ opacity: 1, y: -64, x: 0, transition: { type: 'tween'}}"
+>
+  <div>
+
+[ABILITIES INTERFACE]{class="text-sky-400 font-bold"}
+
+Quite the opposite compared to the previous one<br>Highly dynamic and animated element with educational purpose
+
+  </div>
+</div>
+
+<div
+  v-click="[11]"
+  class="absolute w-full text-center"
+  v-motion
+  :initial="{ opacity: 0, y: 0, x: 0, }"
+  :click-3="{ opacity: 1, y: -32, x: 0, transition: { type: 'tween'}}"
+>
+  <div>
+
+[POINT POPUPS]{class="text-sky-400 font-bold"}
+
+Bloated by design - chaotic elements can be intentional
+
+  </div>
+</div>
+
+<div
   class="absolute w-full"
   v-click="[6, 7]"
   v-motion
@@ -61,7 +96,12 @@ This number grows to [12 indicators]{class="bg-gradient-to-r from-red-600 to-sky
 </div>
 
 <div v-click="11" class="absolute inset-0 flex justify-center items-center">
-<div class="border-2 border-sky w-48 h-20 mr-64 mt-28 rounded-lg border-dashed">
+<div
+  class="border-2 border-sky w-48 h-20 mr-64 mt-28 rounded-lg border-dashed"
+  v-motion
+  :initial="{ opacity: 0, y: -64, x: 0, }"
+  :click-11="{ opacity: 1, y: -32, x: 0, transition: { type: 'tween'}}"
+>
 </div>
 </div>
 

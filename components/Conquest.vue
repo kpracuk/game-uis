@@ -84,7 +84,7 @@ const steps = ref([
     video.currentTime = 0;
     video.play()
     video.style.opacity = '100%'
-    video.playbackRate = 1
+    video.playbackRate = 1.0
     clearTimeouts()
   },
   (video: HTMLVideoElement) => {
@@ -138,6 +138,7 @@ const steps = ref([
     video.pause()
     video.currentTime = 17.2
     video.playbackRate = 0.5
+    video.style.opacity = '100%'
     video.removeEventListener('timeupdate', loopVideoUpgradeFragment)
   },
   (video: HTMLVideoElement) => {
@@ -150,7 +151,7 @@ const steps = ref([
   (video: HTMLVideoElement) => {
     video.removeEventListener('timeupdate', loopVideoUpgradeFragment)
     video.play()
-    video.playbackRate = 1
+    video.playbackRate = 1.0
   }
 ])
 

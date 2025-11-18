@@ -46,11 +46,33 @@ watch(() => props.clicks, (newVal) => {
 
 const fadeOutTimeoutId = ref<number | null>(null);
 const fadeInTimeoutId = ref<number | null>(null);
+const objectiveElementPauseIntervalId = ref<number | null>(null);
+const upgradeElementPauseIntervalId = ref<number | null>(null);
 
 function loopVideoUpgradeFragment(event: Event) {
   const video = event.target as HTMLVideoElement;
   if(video.currentTime >= 17.2) {
     video.currentTime = 14.6
+  }
+}
+
+function objectiveElementPause() {
+  const video = document.getElementById('conquest-video') as HTMLVideoElement;
+
+  if(video && !video.paused && video.currentTime >= 17.75) {
+    video.pause()
+    clearInterval(objectiveElementPauseIntervalId.value)
+    objectiveElementPauseIntervalId.value = null
+  }
+}
+
+function upgradeElementPause() {
+  const video = document.getElementById('conquest-video') as HTMLVideoElement;
+
+  if(video && !video.paused && video.currentTime >= 17.2) {
+    video.pause()
+    clearInterval(upgradeElementPauseIntervalId.value)
+    upgradeElementPauseIntervalId.value = null
   }
 }
 
@@ -71,29 +93,33 @@ const steps = ref([
       video.currentTime = 16.9
       video.playbackRate = 0.5
       video.play()
-      video.style.opacity = '100%'
-      fadeInTimeoutId.value = window.setTimeout(() => {
-        video.pause()
-      }, 1800)
-    }, 500)
-  },
-  (video: HTMLVideoElement) => {
-    video.pause()
-    video.currentTime = 17.75
-    clearTimeouts()
-  },
-  (video: HTMLVideoElement) => {
-    video.pause()
-    video.currentTime = 17.75
-  },
-  (video: HTMLVideoElement) => {
-    video.pause()
-    video.currentTime = 17.75
+      objectiveElementPauseIntervalId.value = window.setInterval(objectiveElementPause, 5)
+      setTimeout(() => {
+        video.style.opacity = '100%'
+      }, 100)
+    }, 400)
   },
   (video: HTMLVideoElement) => {
     clearTimeouts()
     video.pause()
     video.currentTime = 17.75
+    video.style.opacity = '100%'
+  },
+  (video: HTMLVideoElement) => {
+    video.pause()
+    video.currentTime = 17.75
+    video.style.opacity = '100%'
+  },
+  (video: HTMLVideoElement) => {
+    video.pause()
+    video.currentTime = 17.75
+    video.style.opacity = '100%'
+  },
+  (video: HTMLVideoElement) => {
+    clearTimeouts()
+    video.pause()
+    video.currentTime = 17.75
+    video.style.opacity = '100%'
   },
   (video: HTMLVideoElement) => {
     video.style.opacity = '0%'
@@ -101,11 +127,11 @@ const steps = ref([
       video.play()
       video.currentTime = 14.6
       video.playbackRate = 0.5
-      video.style.opacity = '100%'
-      fadeInTimeoutId.value = window.setTimeout(() => {
-        video.pause()
-      }, 5300)
-    }, 500)
+      upgradeElementPauseIntervalId.value = window.setInterval(upgradeElementPause, 5)
+      setTimeout(() => {
+        video.style.opacity = '100%'
+      }, 100)
+    }, 400)
   },
   (video: HTMLVideoElement) => {
     clearTimeouts()
@@ -136,6 +162,14 @@ const clearTimeouts = () => {
   if(fadeInTimeoutId.value) {
     clearTimeout(fadeInTimeoutId.value)
     fadeInTimeoutId.value = null
+  }
+  if(objectiveElementPauseIntervalId.value) {
+    clearInterval(objectiveElementPauseIntervalId.value)
+    objectiveElementPauseIntervalId.value = null
+  }
+  if(upgradeElementPauseIntervalId.value) {
+    clearInterval(upgradeElementPauseIntervalId.value)
+    upgradeElementPauseIntervalId.value = null
   }
 }
 </script>
